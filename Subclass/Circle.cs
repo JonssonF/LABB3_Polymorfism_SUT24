@@ -14,14 +14,19 @@
 
         public override double Area()
         {
-            Console.Write("The area of the circle is : ");
-            return Radius * Radius * Pi;
+            Console.Write("Area of Circle : ");
+            double circleArea = Radius * Radius * Pi;
+            return Math.Round(circleArea, 2);
             
         }
 
         public override double Circumference()
         {
-            throw new NotImplementedException();
+            double diameter = Radius + Radius;
+            double circumference = diameter * Pi;
+            Console.Write("Circumference of Circle : ");
+            return Math.Round(circumference, 2);
+            
         }
 
     }

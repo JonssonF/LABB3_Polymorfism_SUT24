@@ -12,13 +12,15 @@
 
         public override double Area()
         {
-            Console.Write("The area of the square is : ");
+            Console.Write("Area of Square : ");
             return SquareLength * SquareLength;
         }
 
         public override double Circumference()
         {
-            throw new NotImplementedException();
+            double circumference = SquareLength * 4;
+            Console.Write("Perimiter of Square : ");
+            return Math.Round(circumference, 2);
         }
     }
 }
