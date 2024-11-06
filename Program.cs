@@ -15,6 +15,7 @@ namespace LABB3_Polymorfism_SUT24
 
         static void Main(string[] args)
         {
+            // Adds the ready shapes to the Geometry list.
             geometry.Add(rectangle);
             geometry.Add(circle);
             geometry.Add(square);
@@ -72,7 +73,7 @@ namespace LABB3_Polymorfism_SUT24
             Console.Clear();            
             
 
-            foreach (Geometry form in geometry) // A loop that iterates through the list and uses the forms method 'area'. 
+            foreach (Geometry form in geometry) // A loop that iterates through the list and uses the 'Geometry' method 'area'. 
             {
                 Console.WriteLine(form.Area());
             }
@@ -84,7 +85,7 @@ namespace LABB3_Polymorfism_SUT24
         public static void Circumference()
         {
             Console.Clear();           
-            foreach (Geometry form in geometry) // A loop that iterates through the list and uses the forms method 'circumference'.
+            foreach (Geometry form in geometry) // A loop that iterates through the list and uses the 'Geometry' method 'circumference'.
             {
                 Console.WriteLine(form.Circumference());
             }
